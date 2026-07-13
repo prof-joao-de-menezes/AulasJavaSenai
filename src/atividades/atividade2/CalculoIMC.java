@@ -7,7 +7,7 @@ public class CalculoIMC {
 
         Scanner entrada = new Scanner(System.in);
 
-        int valor = entrada.nextInt();
+        int valor = 10;
 
         if (valor < 10 && valor > 0 || valor == 5) {
             System.out.println("Verdade");
