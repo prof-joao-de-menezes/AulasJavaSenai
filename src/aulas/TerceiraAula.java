@@ -3,6 +3,7 @@ package aulas;
 import java.util.Scanner;
 
 public class TerceiraAula {
+    static Scanner entrada = new Scanner(System.in);
 
     public static int somaDeVariaveis(int x, int y){
         int resultado = x + y;
@@ -24,8 +25,6 @@ public class TerceiraAula {
     }
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-
         System.out.println("=== MÉTODO MAIN ===\n\n");
         imprimirSoma();
         int opcao = entrada.nextInt();
