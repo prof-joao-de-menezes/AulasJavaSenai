@@ -6,6 +6,8 @@ public class SistemaCofreDigital {
     public static void abrirCofre(){
         Scanner entrada = new Scanner(System.in);
 
+        System.out.println(entrada);
+
         int senhaDigitada;
         int senha = 9999;
         int tentativas = 5;
@@ -24,6 +26,17 @@ public class SistemaCofreDigital {
         }
 
         System.out.println("Cofre bloqueado.");
+    }
+
+    public static void cofreMaisSeguro(){
+        String senha = new String("senha123");
+        String senhaDigitada = new String("senha123");
+
+        if (senha == senhaDigitada){
+            System.out.println("Valores iguais");
+        } else {
+            System.out.println("Valores diferentes");
+        }
     }
 
     public static void main(String[] args) {
