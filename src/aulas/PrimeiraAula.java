@@ -2,6 +2,9 @@ package aulas;
 
 import java.util.Scanner;
 
+/**
+ * Na primeira aula tivemos uma atividade que é para enviar um print
+ */
 public class PrimeiraAula {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
