@@ -12,13 +12,20 @@ import aulas.encapsulamento.banco.modelo.ContaBancaria;
  */
 public class Main {
     public static void main(String[] args) {
-        ContaBancaria minhaConta = new ContaBancaria("Fulano", 123456);
-        minhaConta.setTitular("Felipe");
-        System.out.println(minhaConta.getTitular());
+        ContaBancaria pessoa1 = new ContaBancaria("Joao");
+        ContaBancaria pessoa2 = new ContaBancaria("Maria");
+        ContaBancaria pessoa3 = new ContaBancaria("Fulano");
 
-        minhaConta.deposistar(100);
+        pessoa1.deposistar(100);
+        pessoa2.deposistar(10000);
+        pessoa3.deposistar(100);
+        pessoa3.sacar(10);
 
-        ContaBancaria pessoa1 = new ContaBancaria("Fulano");
-        ContaBancaria pessoa2 = new ContaBancaria("Robso");
+        System.out.println("A pessoa "+pessoa1.getTitular()+" depositou");
+        pessoa1.deposistar(100);
+
+        System.out.println(pessoa1);
+        System.out.println(pessoa2);
+        System.out.println(pessoa3);
     }
 }
