@@ -13,30 +13,36 @@ public class ContaBancaria {
         this.saldo = 0.0;
     }
 
+    // é um metodo para pegar o valor dentro da instância da classe (no objeto)
     public String getTitular() {
         return titular;
     }
 
+    // é um metodo para modificar o valor dentro da instância da classe (no objeto)
     public void setTitular(String titular) {
         this.titular = titular;
     }
 
-    public int getNumeroDaConta() {
-        return numeroDaConta;
+    // um metodo criado para modificar o valor do saldo de um objeto
+    public void deposistar(double valor){
+        if (valor > 0){
+            this.saldo += valor;
+            System.out.println(valor+" foi depositado");
+        } else {
+            System.out.println("Erro: valor inválido");
+        }
     }
 
-    public void setNumeroDaConta(int numeroDaConta) {
-        this.numeroDaConta = numeroDaConta;
+    // metodo para sacar o valor do .saldo do objeto
+    public void sacar(double valor){
+        if (this.saldo > valor){
+            this.saldo -= valor;
+            System.out.println(valor+" foi retirado da conta");
+        }
     }
 
-    public double getSaldo() {
-        return saldo;
+    // metodos privados também só podem ser acessados dentro da classe que foram criado
+    private String acessarTodosOsDados(){
+        return this.titular;
     }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
-    //metodos Gets e Sets
-
 }
