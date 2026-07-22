@@ -1,12 +1,11 @@
 package aulas.heranca.locomocao;
 
 public class Moto extends Veiculo{
-    String cor;
-    String categoria;
-    String cambio;
-    int quilometragem;
+    private String guidao;
 
     public void puxarPezinho(){
         System.out.println("Puxando pé da moto pra estacionar...");
     }
+
+    public void abastecer(){}
 }
