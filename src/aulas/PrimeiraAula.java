@@ -7,26 +7,34 @@ import java.util.Scanner;
  */
 public class PrimeiraAula {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        Character letra = 'G';
+        char caractere = '?';
+
+
+
+
+
 
         System.out.println("Qual o seu nome?");
-        String nome = scanner.nextLine();
+        String nome = entrada.nextLine();
 
         System.out.println("Qual a sua idade?");
-        int idade = scanner.nextInt();
-        scanner.nextLine();
+        int idade = entrada.nextInt();
+        entrada.nextLine();
 
         System.out.println("Qual a sua altura?");
-        double altura = scanner.nextDouble();
-        scanner.nextLine();
+        double altura = entrada.nextDouble();
+        entrada.nextLine();
 
         System.out.println("Qual o seu cargo?");
-        String cargo = scanner.nextLine();
+        String cargo = entrada.nextLine();
 
         System.out.println("Qual o período você estuda no SENAI?");
-        String periodo = scanner.nextLine();
+        String periodo = entrada.nextLine();
 
-        scanner.close();
+        entrada.close();
 
         System.out.println(
                 "\nSuas informações:\n" +
